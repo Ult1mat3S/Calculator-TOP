@@ -5,12 +5,12 @@ button {
     border-radius: 8px;
     background-color: #ddd;
     border: 1px solid black;
-color:black;
+    color: black;
 }
 
 #calculator-border {
     text-align: center;
-    width: 350px;
+    width: 500px;
     border-radius: 8px;
     background-color: cadetblue;
     border: 1px solid black;
@@ -19,10 +19,9 @@ color:black;
     overflow: hidden;
 }
 
-#display { 
-    text-align: center;
-    font-family: Roboto;  
+#display {
+    /* margin-right: -30px; */
+    text-align: right;
+    font-family: Roboto;
     font-size: 80px;
-
-
 }
