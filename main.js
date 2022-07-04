@@ -1,5 +1,4 @@
 function add(num1, num2) {
-    console.log(arguments);
     const sum = num1 + num2;
     return sum;
 }
@@ -20,7 +19,16 @@ function divide(num1, num2) {
 }
 
 function operate(operator, num1, num2) {
-    console.log(arguments);
-    add.apply(null, arguments);
+    if (operator == "+") {
+        return add(num1, num2);
     }
-
+    else if (operator == "-") {
+        return subtract(num1, num2);
+    }
+    else if (operator == "*") {
+        return multiply(num1, num2);
+    }
+    else if (operator == "/") {
+        return divide(num1, num2);
+    }
+}
