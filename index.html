@@ -7,27 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="main.js" defer> </script>
-    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="globals.css" type="text/css">
 </head>
 
 <body>
     <div id="calculator-border">
-        <div id="display">8237482</div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <div id="display"></div>
+        <button onclick="button1()">1</button>
+        <button onclick="button2()">2</button>
+        <button onclick="button3()">3</button>
+        <button>+</button>
         <br>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+        <button onclick="button4()">4</button>
+        <button onclick="button5()">5</button>
+        <button onclick="button6()">6</button>
+        <button>-</button>
         <br>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
+        <button onclick="button7()">7</button>
+        <button onclick="button8()">8</button>
+        <button onclick="button9()">9</button>
+        <button>/</button>
         <br>
-        <button>0</button>
-        <button>Clear</button>
-        <button>=</button>
+        <button onclick="button0()">0</button>
+        <button onclick="buttonClear()">Clear</button>
+        <button onclick="buttonEqual()">=</button>
+        <button>*</button>
     </div>
 </body>
 
