@@ -1,94 +1,73 @@
-function add(num1, num2) {
-    const sum = num1 + num2;
-    return sum;
+let a = null;
+let b = null;
+let operator = '';
+let displayTotal = '';
+let displayNumber = '';
+
+function add(a, b) {
+    return a + b;
 }
 
-function subtract(num1, num2) {
-    const sum = num1 - num2;
-    return sum;
+function subtract(a, b) {
+    return a - b;
 }
 
-function multiply(num1, num2) {
-    const sum = num1 * num2;
-    return sum;
+function multiply(a, b) {
+    return a * b;
 }
 
-function divide(num1, num2) {
-    const sum = num1 / num2;
-    return sum;
+function divide(a, b) {
+    return a / b;
 }
 
-function operate(operator, num1, num2) {
+function operate(operator, a, b) {
     if (operator == "+") {
-        return add(num1, num2);
+        return add(a, b);
     }
     else if (operator == "-") {
-        return subtract(num1, num2);
+        return subtract(a, b);
     }
     else if (operator == "*") {
-        return multiply(num1, num2);
+        return multiply(a, b);
     }
     else if (operator == "/") {
-        return divide(num1, num2);
+        return divide(a, b);
     }
 }
 
 function button0() {
     const display = document.querySelector('#display');
+    displayNumber = 0
     display.textContent = 0
 }
 
 function button1() {
     const display = document.querySelector('#display');
+    displayNumber = 1
     display.textContent = 1
+    return displayNumber;
 }
 
 function button2() {
     const display = document.querySelector('#display');
+    displayNumber = 2
     display.textContent = 2
-}
-
-function button3() {
-    const display = document.querySelector('#display');
-    display.textContent = 3
-}
-
-function button4() {
-    const display = document.querySelector('#display');
-    display.textContent = 4
-}
-
-function button5() {
-    const display = document.querySelector('#display');
-    display.textContent = 5
-}
-
-function button6() {
-    const display = document.querySelector('#display');
-    display.textContent = 6
-}
-
-function button7() {
-    const display = document.querySelector('#display');
-    display.textContent = 7
-}
-
-function button8() {
-    const display = document.querySelector('#display');
-    display.textContent = 8
-}
-
-function button9() {
-    const display = document.querySelector('#display');
-    display.textContent = 9
-}
-
-function buttonClear() {
-    const display = document.querySelector('#display');
-    display.textContent = ''
+    return displayNumber;
 }
 
 function buttonEqual() {
     const display = document.querySelector('#display');
-    display.textContent = ''
+    operator = '='
+    operate(operator, a, b)
+    display.textContent = displayNumber
+    console.log(displayNumber);
 }
+
+function buttonAdd() {
+    const display = document.querySelector('#display');
+    operator = '+'
+    a = a + displayNumber
+    console.log(a)
+    return a
+}
+
