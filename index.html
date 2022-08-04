@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css">
+    <script src="main.js" defer></script>
     <title>Calculator</title>
-    <script src="main.js" defer> </script>
-    <link rel="stylesheet" href="globals.css" type="text/css">
 </head>
 
 <body>
-    <div id="calculator-border">
-        <div id="display"></div>
-        <button onclick="button1()">1</button>
-        <button onclick="button2()">2</button>
-        <button onclick="button3()">3</button>
-        <button onclick="buttonAdd()">+</button>
-        <br>
-        <button onclick="button4()">4</button>
-        <button onclick="button5()">5</button>
-        <button onclick="button6()">6</button>
-        <button onclick="buttonSubtract()">-</button>
-        <br>
-        <button onclick="button7()">7</button>
-        <button onclick="button8()">8</button>
-        <button onclick="button9()">9</button>
-        <button onclick="buttonDivide()">/</button>
-        <br>
-        <button onclick="button0()">0</button>
-        <button onclick="buttonClear()">Clear</button>
-        <button onclick="buttonEqual()">=</button>
-        <button onclick="buttonMultiply()">*</button>
+    <div class="calculator">
+        <div class="output">
+            <div class="previousNumber"></div>
+            <div class="currentNumber">Current Number: 0</div>
+            <div class="operator">Operator: 0</div>
+        </div>
+        <div class="buttons">
+            <button id="button1">1</button>
+            <button id="button2">2</button>
+            <button id="button3">3</button>
+            <button id="buttonAdd">+</button>
+            <br>
+            <button id="button4">4</button>
+            <button id="button5">5</button>
+            <button id="button6">6</button>
+            <button id="buttonSubtract">-</button>
+            <br>
+            <button id="button7">7</button>
+            <button id="button8">8</button>
+            <button id="button9">9</button>
+            <button id="buttonDivide">/</button>
+            <br>
+            <button id="button0">0</button>
+            <button id="buttonClear">AC</button>
+            <button id="buttonEqual">=</button>
+            <button id="buttonMultiply">*</button>
+        </div>
     </div>
 </body>
 
